@@ -1,0 +1,13 @@
+<div
+  class="contact-card"
+  (click)="navigateToLink()"
+  (keydown.enter)="navigateToLink()"
+  [class.clickable]="link"
+  [attr.role]="link ? 'button' : null"
+  [attr.tabindex]="link ? '0' : null"
+>
+  <img [src]="icon" alt="{{ title }}" class="contact-image" [class.clickable]="link">
+  <div class="contact-info">
+    <h4>{{ title }}</h4>
+  </div>
+</div>
