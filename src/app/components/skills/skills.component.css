@@ -1,0 +1,14 @@
+.skills-section {
+    padding-top: 100px; /* Push content below fixed navbar */
+    min-height: calc(100vh - 100px);
+    scroll-margin-top: 100px; /* For anchor link scrolling */
+    padding-bottom: 100px;
+  }
+  @media (max-width: 768px) {
+    .skills-section {
+      padding-top: 70px;
+      min-height: calc(100vh - 70px);
+      scroll-margin-top: 70px;
+      padding-bottom: 70px;
+    }
+  }

@@ -6,7 +6,7 @@ import { QuoteBarComponent } from './components/quote-bar/quote-bar.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, RouterOutlet, QuoteBarComponent],
+  imports: [NavbarComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

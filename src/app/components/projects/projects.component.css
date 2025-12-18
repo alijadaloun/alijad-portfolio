@@ -1,0 +1,27 @@
+.projects-section {
+    padding-top: 100px; /* Push content below fixed navbar */
+    min-height: calc(100vh - 100px);
+    scroll-margin-top: 100px; /* For anchor link scrolling */
+  }
+  .section-subtitle {
+    margin: 3rem auto 1.5rem;
+    max-width: 800px;
+    color: #9ddcff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-section {
+      padding-top: 70px;
+      min-height: calc(100vh - 70px);
+      scroll-margin-top: 70px;
+    }
+  }
+  @media (max-width: 480px) {
+    .projects-section {
+      padding-top: 50px;
+      min-height: calc(100vh - 50px);
+      scroll-margin-top: 50px;
+    }
+  }

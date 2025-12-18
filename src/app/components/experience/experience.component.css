@@ -1,0 +1,22 @@
+/* Experience Section Spacing Fix */
+.experience-section {
+    padding-top: 100px; /* Push content below fixed navbar */
+    min-height: calc(100vh - 100px);
+    scroll-margin-top: 100px; /* For anchor link scrolling */
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .experience-section {
+      padding-top: 70px;
+      min-height: calc(100vh - 70px);
+      scroll-margin-top: 70px;
+    }
+  }
+  @media (max-width: 480px) {
+    .experience-section {
+      padding-top: 50px;
+      min-height: calc(100vh - 50px);
+      scroll-margin-top: 50px;
+    }
+  }

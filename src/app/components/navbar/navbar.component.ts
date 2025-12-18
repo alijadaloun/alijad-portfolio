@@ -24,5 +24,14 @@ export class NavbarComponent {
     { path: '/projects', label: 'Projects' },
     { path: 'skills', label: 'Skills' },
   ];
+    isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
 
 }

@@ -1,0 +1,11 @@
+{
+  "/quotes-api": {
+    "target": "https://programming-quotes-api-pi.vercel.app/quotes/random",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/quotes-api": ""
+    }
+
+  }
+}

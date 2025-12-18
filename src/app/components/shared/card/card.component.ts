@@ -14,6 +14,8 @@ export class CardComponent implements AfterViewInit {
   @Input() description?: string;
   @Input() date?: string;
   @Input() extraInfo?: string;
+  @Input() icon?: string;
+  @Input() link?: string;
     constructor(private elementRef: ElementRef) {}
 
   ngAfterViewInit() {

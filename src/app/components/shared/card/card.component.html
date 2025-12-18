@@ -1,5 +1,21 @@
-<div class="card">
-  <h3>{{ title }}</h3>
+<a *ngIf="link" [href]="link" target="_blank" rel="noopener noreferrer" class="card card-link">
+  <div class="card-header">
+    <i *ngIf="icon" [class]="icon"></i>
+    <h3>{{ title }}</h3>
+  </div>
+
+  <p class="subtitle" *ngIf="subtitle">{{ subtitle }}</p>
+  <p class="date" *ngIf="date">{{ date }}</p>
+  <p class="description" *ngIf="description">{{ description }}</p>
+  <p class="extra-info" *ngIf="extraInfo">{{ extraInfo }}</p>
+</a>
+
+<div *ngIf="!link" class="card">
+  <div class="card-header">
+    <i *ngIf="icon" [class]="icon"></i>
+    <h3>{{ title }}</h3>
+  </div>
+
   <p class="subtitle" *ngIf="subtitle">{{ subtitle }}</p>
   <p class="date" *ngIf="date">{{ date }}</p>
   <p class="description" *ngIf="description">{{ description }}</p>
